@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 /**
  * Holiday class implementation for the Secret API for Holiday by Moorescloud
@@ -120,24 +119,5 @@ Class HolidaySecretAPI {
 	}//end function render()
 		
 }//end class
-
-
-// Basic testing if an IP address or hostname is passed on the command-line
-if ( isset($argv[1]) ) {
-
-	$holiday = new HolidaySecretAPI($argv[1]);
-	
-	while (true) {
-		$r = rand(0, 255);
-		$g = rand(0, 255);
-		$b = rand(0, 255);
-		$holiday->fill($r, $g, $b);
-		$holiday->render();
-		usleep(1000000);
-	}
-
-} else {
-	exit(1);
-}
 
 ?>
