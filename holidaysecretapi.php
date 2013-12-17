@@ -28,6 +28,7 @@ Class HolidaySecretAPI {
 	 * performed
 	 */	
 	function __construct($addr) {
+
 		if ( $addr == '') return false;
 		
 		// Initialise an array of globes set to all zeroes
@@ -38,8 +39,6 @@ Class HolidaySecretAPI {
 		$this->addr = $addr;
 		$this->sock = socket_create( AF_INET, SOCK_DGRAM, SOL_UDP);
 		
-		//echo(print_r($this->globes, true));
-				
 	}//end function __construct()
 
 	/**
