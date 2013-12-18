@@ -9,7 +9,7 @@
  * @license MIT
  */
  
-include 'holidaysecretapi.php';
+include 'class.holiday.secretapi.php';
 
 // Need to pass the IP address or hostname of the Holiday on the command-line
 if ( isset($argv[1]) ) {
@@ -18,9 +18,9 @@ if ( isset($argv[1]) ) {
 	
 	while (true) {
 
-		$r = rand(0, 63);
-		$g = rand(0, 63);
-		$b = rand(0, 63);
+		$r = rand(63, 255);
+		$g = rand(63, 255);
+		$b = rand(63, 255);
 		
 		// Now, based on another random value, squash one of these values
 		switch (rand(0,2)) {

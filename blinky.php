@@ -11,7 +11,7 @@
  * @license MIT
  */
 
-include 'holidaysecretapi.php';
+include 'class.holiday.secretapi.php';
 
 // Need to pass the IP address or hostname of the Holiday as a command-line parameter
 if ( isset($argv[1]) ) {
