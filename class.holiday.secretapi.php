@@ -49,9 +49,9 @@ Class HolidaySecretAPI {
 			return false;
 		}
 		
-		if ( $r < 0 || $r > 63) $r = 0;
-		if ( $g < 0 || $g > 63) $g = 0;
-		if ( $b < 0 || $b > 63) $b = 0;
+		if ( $r < 0 || $r > 255) $r = 0;
+		if ( $g < 0 || $g > 255) $g = 0;
+		if ( $b < 0 || $b > 255) $b = 0;
 		
 		$this->globes[$globenum] = array ((int)$r, (int)$g, (int)$b);
 		
