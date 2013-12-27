@@ -36,7 +36,7 @@ if ( isset($argv[1]) ) {
 			break;
 		}
 	
-		for ($globe; $globe < $holiday->NUM_GLOBES; $globe++) {
+		for ($globe = null; $globe < $holiday->NUM_GLOBES; $globe++) {
 
 			// First turn off all the globes
 			$holiday->fill(0, 0, 0);
